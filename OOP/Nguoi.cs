@@ -55,6 +55,17 @@ namespace OOP
             }
             else Console.WriteLine("Bạn hơi béo");
         }
-
+        // Tạo 1 Class Bò có các mô tả sau:
+        /* Thuộc tính
+         * Số hiệu (ID): int
+         * Giống bò: string
+         * Màu lông: string
+         * Mô tả: string
+         * Giới tính: bool (true-false)
+         * 2 loại Constructor
+         * 3 Property
+         * 4 Phương thức
+         * Ăn cỏ, InThongTin, Rống
+         */
     }
 }
