@@ -44,6 +44,17 @@ namespace OOP
         {
             Console.WriteLine($"Tên: {ten}, tuổi: {tuoi}, CCCD: {cccd}");
         }
+        // Viết phương thức kiểm tra xem người đó béo hay gầy
+        // Cân nặng > Số lẻ chiều cao -> Béo
+        // Cân nặng < Số lẻ chiều cao -> Gầy
+        public void KiemTraGayBeo()
+        {
+            if(cannang < chieucao - 100)
+            {
+                Console.WriteLine("Bạn hơi gầy");
+            }
+            else Console.WriteLine("Bạn hơi béo");
+        }
 
     }
 }

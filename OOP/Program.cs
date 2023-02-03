@@ -33,7 +33,12 @@ namespace OOP
             nguoi.InThongTin(); // Gọi phương thức từ lớp Nguoi
             Nguoi nguoi2 = new Nguoi("Khánh", 19, "123", 120, 100); // có tham số
             nguoi2.InThongTin();
-     
+            // Sử dụng Property để lấy/gán giá trị cho thuộc tính
+            // get và set đều dùng dấu . để trỏ đến thuộc tính
+            Console.WriteLine($"Tên của người thứ 2 là: {nguoi2.Ten}"); //get
+            nguoi2.Ten = "Nam"; // dùng set để thay đổi giá trị của Tên
+            Console.WriteLine($"Tên của người thứ 2 là: {nguoi2.Ten}");
+            nguoi2.KiemTraGayBeo();
         }
     }
 }
