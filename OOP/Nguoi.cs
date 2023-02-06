@@ -4,7 +4,7 @@ using System.Text;
 
 namespace OOP
 {
-    internal class Nguoi
+    public class Nguoi
     {
         // Các thành phần chính trong 1 class
         // 1. Các thuộc tính
