@@ -45,18 +45,21 @@ namespace OOP_4_Tinhchat
             // Sau đó viết phương thức MoTa để hiển thị thông tin của Chú Chó
             // MoTa có AC = protected internal sau đó thử thay thế = các AC khác
             // => Rút ra nhận xét
-            Mu mu = new Mu("Nón sơn", "Da bò", "Nón Sơn", 500000);
-            mu.ThongTin();
-            //MuCoi mc = new Mu(); // Không thể tạo đối tượng của lớp con
-                                 // = constructor của lớp cha
-            Mu mu2 = new MuCoi("Nón Cối", "Da ngựa", "Thống nhất", 500000, "Vàng", "Vằn vện");
-            // CÓ thể tạo đối tượng của lớp cha
-            // = constructor của lớp con
-            mu2.ThongTin();
-            MuCoi mc2 = new MuCoi("Nón Cối xay", "Da dê", "Thống nhất", 500000, "Vàng", "Vằn vện");
-            mc2.ThongTin();
-            Mu mu3 = mc2; // Gán 1 giá trị của đối tượng con cho cha
-            mu3.ThongTin();
+            //Mu mu = new Mu("Nón sơn", "Da bò", "Nón Sơn", 500000);
+            //mu.ThongTin();
+            ////MuCoi mc = new Mu(); // Không thể tạo đối tượng của lớp con
+            //                     // = constructor của lớp cha
+            //Mu mu2 = new MuCoi("Nón Cối", "Da ngựa", "Thống nhất", 500000, "Vàng", "Vằn vện");
+            //// CÓ thể tạo đối tượng của lớp cha
+            //// = constructor của lớp con
+            //mu2.ThongTin();
+            //MuCoi mc2 = new MuCoi("Nón Cối xay", "Da dê", "Thống nhất", 500000, "Vàng", "Vằn vện");
+            //mc2.ThongTin();
+            //Mu mu3 = mc2; // Gán 1 giá trị của đối tượng con cho cha
+            //mu3.ThongTin();
+            Mu m3 = new Mu();
+            m3.CachLam();
+            m3.CachLam("Sợi nhựa");
         }
     }
 }

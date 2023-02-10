@@ -54,5 +54,9 @@ namespace OOP_4_Tinhchat
                 $"và màu {mausac}");
         }
 
+        public override void CachLam(string vatlieu)
+        {
+            Console.WriteLine("Mũ cối làm bằng cách đóng khuôn");
+        } // Hàm CachLam này đã ghi đè lên hàm CachLam của lớp Mu
     }
 }
