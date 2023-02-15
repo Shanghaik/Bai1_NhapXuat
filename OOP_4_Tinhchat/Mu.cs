@@ -45,7 +45,7 @@ namespace OOP_4_Tinhchat
         {
             Console.WriteLine("Làm thủ công");
         }
-        public void CachLam(string vatlieu)
+        public virtual void CachLam(string vatlieu)
         {
             Console.WriteLine("Làm bằng cách kết hợp các "+vatlieu);
         }
