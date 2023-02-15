@@ -11,10 +11,13 @@ namespace QuanLySinhVien
             Services services= new Services();
             services.NhapDanhSachSV();
             services.XuatDanhSach();
-            services.SuaSinhvien();
-            services.XuatDanhSach();
-            services.XoaSinhvien();
-            services.XuatDanhSach();
+            //services.SuaSinhvien();
+            //services.XuatDanhSach();
+            //services.XoaSinhvien();
+            //services.XoaTheoGiaTri();
+            //services.XuatDanhSach();
+            //services.TimKiemTheoMa();
+            services.SapXepTheoTuoi();
         }
     }
 }

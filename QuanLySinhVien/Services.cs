@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace QuanLySinhVien
@@ -71,6 +72,36 @@ namespace QuanLySinhVien
             int pos = int.Parse(Console.ReadLine());
             sinhviens.RemoveAt(pos); // Hàm RemoveAt dùng để bỏ 1 phần tử ở
             // Một vị trí nào đó khỏi List
+        }
+        public void XoaTheoGiaTri() // Xóa những SV mà tuổi < 18
+        {
+            for (int i = 0; i < sinhviens.Count; i++)
+            {
+                if (sinhviens[i].Tuoi < 18)
+                {
+                    sinhviens.RemoveAt(i); // Xóa theo vị trí
+                    //sinhviens.Remove(sinhviens[i]); // Xóa theo giá trị
+                    i--; // Khi bị xóa phải update vị trí
+                }
+            }
+        }
+        public void TimKiemTheoMa()
+        {
+            Console.WriteLine("Nhập mã mà bạn muốn tìm kiếm");
+            string ma = Console.ReadLine();
+            foreach (var item in sinhviens)
+            {
+                if (item.Code.Contains(ma)) // Contains - chứa chuỗi
+                {
+                    item.InThongTin();
+                }
+            }
+        }
+        // Sắp xếp
+        public void SapXepTheoTuoi()
+        {
+            sinhviens = sinhviens.OrderBy(p => p.Tuoi).ToList();
+            XuatDanhSach();
         }
 
     }
